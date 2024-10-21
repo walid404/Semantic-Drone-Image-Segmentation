@@ -71,7 +71,6 @@ The model achieved a **testing accuracy of 81%**. The following images showcase 
 
 ```bash
 git clone https://github.com/yourusername/semantic-drone-segmentation-unet.git
-cd semantic-drone-segmentation-unet
 ```
 ### 2. Upload the Notebook on Kaggle
 ### 3. Run the Notebook Using GPU
