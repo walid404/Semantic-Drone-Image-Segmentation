@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Segmentation App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+</head>
+<body>
+    <!-- Title of the app -->
+    <h1 class="title">Drop Image Segmentation</h1>
+
+    <!-- Main container -->
+    <div class="container">
+        <!-- Sidebar with action buttons -->
+        <div class="sidebar">
+            <h2>Actions</h2>
+            <input type="file" id="imageLoader" name="imageLoader" style="display: none;">
+            <button id="customLoadImageBtn">Load Image</button>
+            <button id="predictBtn" disabled>Predict Image</button>
+            <button id="saveBtn" disabled>Save Prediction</button>
+            <button id="clearBtn" disabled>Clear Images</button>
+        </div>
+
+        <!-- Content area with images -->
+        <div class="content">
+            <div class="image-container" id="originalImageContainer">
+                <h3>Original Image</h3>
+                <img id="originalImage" src="" alt="Original Image">
+            </div>
+            <div class="image-container" id="predictedImageContainer">
+                <h3>Predicted Image</h3>
+                <img id="predictedImage" src="" alt="Predicted Image">
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
